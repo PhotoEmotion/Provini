@@ -37,16 +37,17 @@ a:focus, a:hover, a:active {
 
 
 div#page {
-	width: 90%;
+	/* width: 90%; */
 	background-color: #fff;
 	margin: 0 auto;
 	text-align: left;
-	border-color: #ddd;
+	/* border-color: #ddd;
 	border-style: none solid solid;
-	border-width: medium 1px 1px;
+	border-width: medium 1px 1px; */
+	padding:1em;
 }
 div#container {
-	padding: 20px;
+	/* padding: 20px; */
 }
 div#ads {
 	clear: both;
