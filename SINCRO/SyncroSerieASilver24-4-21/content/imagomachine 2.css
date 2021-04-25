@@ -1,0 +1,61 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+body{
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	font-size:medium;
+	background-color: #eee;
+	color: #444;
+	font-size: 75%;
+}
+a{
+	color: #27D;
+	text-decoration: none;
+}
+a:focus, a:hover, a:active {
+	text-decoration: underline;
+}
+.photogallery
+{
+	padding: 0;
+	list-style-type: none;
+}
+
+.photogallery ul li
+{
+	display: inline;
+}
+
+
+.photogallery ul li img
+{
+	margin: 5px;
+	border: none;
+}
+
+
+div#page {
+	width: 90%;
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 1px 1px;
+}
+div#container {
+	padding: 20px;
+}
+div#ads {
+	clear: both;
+	padding: 12px 0 12px 66px;
+}
+div#footer {
+	clear: both;
+	color: #777;
+	margin: 0 auto;
+	padding: 20px 0 40px;
+	text-align: center;
+}
