@@ -1,0 +1,133 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>CSEN Campionato Nazionale Ginnastica Ritmica - Bellaria 6 Giugno 2024</title>
+  <link href="content/imagomachine.css" rel="stylesheet" type="text/css" />
+  <link href="content/slimbox2.css" rel="stylesheet" type="text/css" media="screen" />
+  <script src="content/jquery-1.4.1.min.js" type="text/javascript"></script>
+  <script src="content/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+  <script src="content/jquery.validate.min.js" type="text/javascript"></script>
+  <script src="content/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+  <script src="content/slimbox2.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    document.write('<style>.noscript { display: none; }</style>');
+
+    var pagesize = 200;
+
+    function Find(page) {
+      var s = "";
+      var counter = 0;
+      for (var j = 0; j < array.length; j++) {
+        var k = array[j][2];
+        var found = 1;
+        for (var i = 1; i < 20; i++) {
+          if ($("#Famiglia" + i).length != 0 && $("#Famiglia" + i).val() > 0) {
+            if (k.indexOf($("#Famiglia" + i).val()) > -1)
+              found = 1;
+            else
+              found = 0;
+          }
+        }
+
+        if (found == 1 && s.indexOf("name='" + array[j][0] + "'") == -1) {
+          if (counter >= pagesize * page && counter < pagesize * (page + 1)) {
+            s += "<li><a rel='lightbox[roadtrip]' class='thumb' name='" + array[j][0] + "' href='content/" + array[j][1] + "' title='" + array[j][0] + "'><img src='content/" + array[j][1] + "' width='100' height='100' alt='" + array[j][0] + "' /></a></li>";
+          }
+          counter++;
+
+        }
+      }
+
+      var pager = "Sono state trovate " + counter + " foto";
+      if (Math.ceil(counter / pagesize) > 1) {
+        pager += " - Pagine: ";
+        for (var k = 0; k < Math.ceil(counter / pagesize); k++) {
+          pager += "<a href='javascript:Find(" + k + ")'>" + (k + 1) + "</a>&nbsp;";
+        }
+      }
+      $("#pager").html(pager);
+
+      $("#result").html(s);
+      jQuery(function ($) {
+        $("a[rel^='lightbox']").slimbox({/* Put custom options here */
+        }, null, function (el) {
+          return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
+        });
+      });
+    } document.write('<style>.noscript { display: none; }</style>');
+
+    var pagesize = 200;
+
+    function Find(page) {
+      var s = "";
+      var counter = 0;
+      for (var j = 0; j < array.length; j++) {
+        var k = array[j][2];
+        var found = 1;
+        for (var i = 1; i < 20; i++) {
+          if ($("#Famiglia" + i).length != 0 && $("#Famiglia" + i).val() > 0) {
+            if (k.indexOf($("#Famiglia" + i).val()) > -1)
+              found = 1;
+            else
+              found = 0;
+          }
+        }
+        if (found == 1 && s.indexOf("name='" + array[j][0] + "'") == -1) {
+          if (counter >= pagesize * page && counter < pagesize * (page + 1)) {
+            s += "<li><a rel='lightbox[roadtrip]' class='thumb' name='" + array[j][0] + "' href='content/" + array[j][1] + "' title='" + array[j][0] + "'><img src='content/" + array[j][1] + "' width='100' height='100' alt='" + array[j][0] + "' /></a></li>";
+          }
+          counter++;
+        }
+      }
+
+      var pager = "Sono state trovate " + counter + " foto";
+      if (Math.ceil(counter / pagesize) > 1) {
+        pager += " - Pagine: ";
+        for (var k = 0; k < Math.ceil(counter / pagesize); k++) {
+          pager += "<a href='javascript:Find(" + k + ")'>" + (k + 1) + "</a>&nbsp;";
+        }
+      }
+      $("#pager").html(pager);
+
+      $("#result").html(s);
+      jQuery(function ($) {
+        $("a[rel^='lightbox']").slimbox({/* Put custom options here */
+        }, null, function (el) {
+          return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel));
+        });
+      });
+    }
+
+    var array = new Array(2)
+array[0] = new Array(3);
+array[0][0]='4';array[0][1]='00004_1.jpg';array[0][2]='4037,4053,4238,';
+array[1] = new Array(3);
+array[1][0]='6';array[1][1]='00006_1.jpg';array[1][2]='4037,4053,4238,';
+
+
+		</script>
+</head>
+<body onload="javascript:Find(0)">
+  <div id="page">
+    <div id="container">
+      <h1>
+        <a href="index.htm">CSEN Campionato Nazionale Ginnastica Ritmica - Bellaria 6 Giugno 2024</a></h1>
+      <h2>
+          06/06/2024</h2>
+      <p>
+        A-B&nbsp;<select id='Famiglia1' name='Famiglia1'><option value='0'>...</option><option value='4039'>ACQUATI MAYA</option><option value='4040'>ADAMO</option><option value='4041'>AGNOLI DELIA</option><option value='4042'>AMADIGI GIULIA</option><option value='4043'>ANAZECO ESPINOZA EVELYN SAMARA</option><option value='4044'>ANOBILE SARA</option><option value='4045'>AROSIO GIORGIA</option><option value='4046'>BARBIERI MATILDA</option><option value='4047'>BATTISTONI TEODORA</option><option value='4048'>BENAGLIO ARIANNA</option><option value='4049'>BERRETTA SOFIA</option><option value='4050'>BERTANI MARGHERITA</option><option value='4051'>BERTARINI GRETA</option><option value='4052'>BICCI CAMILLA</option><option value='4053'>BOLDONI NEREA</option><option value='4054'>BONANNI</option><option value='4055'>BONINI</option><option value='4056'>BORGHI</option><option value='4057'>BORGHI GIULIA</option><option value='4058'>BRAMBILLA ALICE</option><option value='4059'>BRANDINI EMMA</option><option value='4060'>BRIOSCHI ASTRID EMMA</option><option value='4061'>BROCHERIO BIANCA REBECCA</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C-D&nbsp;<select id='Famiglia2' name='Famiglia2'><option value='0'>...</option><option value='4063'>CALÀ REBECCA</option><option value='4064'>CALÌ</option><option value='4065'>CALPO REIN</option><option value='4066'>CAMERINI EMMAMARIA</option><option value='4067'>CANESTRELLI</option><option value='4068'>CAPONE ROBERTA</option><option value='4069'>CAPPELLI MARGHERITA</option><option value='4070'>CAPPIELLO MIRIAM</option><option value='4071'>CASATI ELISA</option><option value='4072'>CASTIGLIONI AURORA</option><option value='4073'>CINQUEMANI EMMA</option><option value='4074'>CINQUEPALMI</option><option value='4075'>CIPULLO GIULIA</option><option value='4076'>COLANGELO FRANCESCA</option><option value='4077'>COLOMBINI LARA</option><option value='4078'>COLOMBO ALESSIA</option><option value='4079'>CORNA MARTA</option><option value='4080'>CORSI AURORA</option><option value='4081'>CORSI PERLA</option><option value='4082'>CORTESI</option><option value='4083'>COSMA ARIANNA</option><option value='4084'>COSTA EMMA</option><option value='4085'>D'ALESSANDRO ILARIA ANNA</option><option value='4086'>DE FALCO BEATRICE</option><option value='4087'>DE LUCA ELEONORA</option><option value='4088'>DE MICCOLI DANA</option><option value='4089'>DEL FAVERO LUCREZIA</option><option value='4090'>DELLA ROSA</option><option value='4091'>DEMA ALESSANDRA</option><option value='4092'>DEPAOLINI</option><option value='4093'>DI BARTOLO MARIA VITTORIA</option><option value='4094'>DI PASQUALE SARA</option><option value='4095'>DI SABATINO DILETTA</option><option value='4096'>DORILLO</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-K&nbsp;<select id='Famiglia3' name='Famiglia3'><option value='0'>...</option><option value='4098'>ESPOSITO CARLOTTA MARIA</option><option value='4099'>ESPOSITO MELISSA</option><option value='4100'>FABRIZI IRENE</option><option value='4101'>FARIN</option><option value='4102'>FARINA</option><option value='4103'>FERRARIO ALICE</option><option value='4104'>FEZZUOGLIO</option><option value='4105'>FICCA MATILDE</option><option value='4106'>FICONI</option><option value='4107'>FILISETTI GIORGIA</option><option value='4108'>FIORUCCI</option><option value='4109'>FLECCA EMMA</option><option value='4110'>FORESI CHIARA</option><option value='4111'>FOSSATI GIULIA</option><option value='4112'>FOVINI</option><option value='4113'>FOVINI MILA MARIE</option><option value='4114'>FUMAGALLI ELENA</option><option value='4115'>GERACI EMMA</option><option value='4116'>GHINEA BEATRICE</option><option value='4117'>GIGLIOTTI CLARA</option><option value='4118'>GIOVINETTI BEATRICE</option><option value='4119'>GIZZARELLI</option><option value='4120'>GRANDIN MIRIAM</option><option value='4121'>GRASSO</option><option value='4122'>GUARNIERI CECILIA</option><option value='4123'>HENIN LUCIA</option><option value='4124'>ISOLA</option><option value='4125'>KONJIC LUNA</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-O&nbsp;<select id='Famiglia4' name='Famiglia4'><option value='0'>...</option><option value='4127'>LA GUARDIA VIRGINIA</option><option value='4128'>LA IACONA ANGELICA</option><option value='4129'>LA PAGLIA IRENE</option><option value='4130'>LANARI LINDA</option><option value='4131'>LAVIA DALILA</option><option value='4132'>LAVIA FORESI</option><option value='4133'>LEONE ELISA</option><option value='4134'>LIGUORI ARIANNA</option><option value='4135'>LOVATI AURORA</option><option value='4136'>LUCARELLI - -</option><option value='4137'>MACCHIA LUNA</option><option value='4138'>MADDALUNO FARAH ELIZABETH</option><option value='4139'>MAGARA GIORGIA</option><option value='4140'>MAGGIOLINI NICOLE</option><option value='4141'>MAIO NINA</option><option value='4142'>MANDELLI VIOLA</option><option value='4143'>MAROTTA GAIA</option><option value='4144'>MARTINELLI ALICE</option><option value='4145'>MARTINI MARIA GIULIA</option><option value='4146'>MAURO BIANCA MARIA</option><option value='4147'>MAZZEO GIULIA</option><option value='4257'>MEAZZA</option><option value='4148'>MEMOLI SERENA</option><option value='4149'>MENGOLI</option><option value='4150'>MEO</option><option value='4151'>MICCOLI AURORA</option><option value='4152'>MISTRETTA GAIA</option><option value='4153'>MOLLA</option><option value='4154'>MONTEBELLO AZZURRA</option><option value='4155'>MONTEPELOSO</option><option value='4156'>MONTI CONDESNITT UMBERTA ARMANDA</option><option value='4157'>MONTIROSI</option><option value='4158'>MORONI GIORGIA</option><option value='4159'>MOSCA FRANCESCA</option><option value='4160'>NICORA LISA</option><option value='4161'>OLDANI MARTA</option><option value='4162'>ONORATI SOFIA</option><option value='4163'>ORRICO</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P-Q&nbsp;<select id='Famiglia5' name='Famiglia5'><option value='0'>...</option><option value='4165'>PAGNI ANASTASIA</option><option value='4166'>PANDOLFI VITTORIA</option><option value='4167'>PANETTI MARTINA</option><option value='4168'>PANZERI GIULIA</option><option value='4169'>PARADISI</option><option value='4170'>PARRAVICINI GIULIA</option><option value='4171'>PASTORINO GIORGIA</option><option value='4172'>PATTI BEATRICE</option><option value='4173'>PENNATI MARTINA</option><option value='4174'>PERLMAN ARIEL</option><option value='4175'>PETRUCCI LUSINDA</option><option value='4176'>PIERFELICE CATERINA</option><option value='4177'>PIERMARINI CAMILLA</option><option value='4178'>PIGA REBECCA</option><option value='4179'>PINSUTI GIORGIA</option><option value='4180'>PIROLA VIOLA</option><option value='4181'>PIROVANO SOFIA</option><option value='4182'>POLICHENI SOFIA</option><option value='4183'>POMPIERI NICOL</option><option value='4184'>PONZA ASIA</option><option value='4185'>PROSERPIO LAURA</option><option value='4186'>QUAINI CAMILLA-</option><option value='4187'>QUEIROLI ALICE</option><option value='4188'>QUINTAVALLE ALESSANDRA MARIA</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREMIAZIONI&nbsp;<select id='Famiglia6' name='Famiglia6'><option value='0'>...</option><option value='4258'>PREMIAZIONI ESO</option><option value='4248'>PREMIAZIONI JUNIOR</option><option value='4249'>PREMIAZIONI SENIOR</option><option value='4250'>PREMIAZIONNI YOUNG</option><option value='4251'>PREMIAZIONI ALLIEVE</option><option value='4252'>ORGANIZZAZIONE</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R-S&nbsp;<select id='Famiglia7' name='Famiglia7'><option value='0'>...</option><option value='4190'>RAMIREZ GIULIA</option><option value='4191'>RAMPIN SOFIA</option><option value='4192'>RANDAZZO MARTINA</option><option value='4193'>RE DEPAOLINI GIORGIA</option><option value='4194'>REIN</option><option value='4195'>RESSA GIORGIA</option><option value='4196'>RESTELLI MATILDE</option><option value='4197'>REZZONICO AMELIA</option><option value='4198'>RIGHETTI CLEO</option><option value='4199'>RIPALI CAMILLA</option><option value='4200'>RODRIGUEZ MARTINEZ ELEN</option><option value='4201'>ROZZONI EMMA</option><option value='4202'>RUBINI GIULIA</option><option value='4203'>RUSHANI</option><option value='4204'>RUSSO GAIA</option><option value='4205'>RUSSO GIORGIA</option><option value='4206'>SABELLA ELISA</option><option value='4207'>SALUTE FRANCESCA</option><option value='4208'>SANTAMBROGIO ALICE</option><option value='4209'>SANTI DELLA ROSA VIOLA</option><option value='4210'>SAPRYKINA GLORIA</option><option value='4211'>SCARLATELLA BIANCA</option><option value='4212'>SCHMID REBEKKA</option><option value='4213'>SCOPPA LUDOVICA</option><option value='4214'>SEGONI LISA</option><option value='4215'>SERRA EMMA</option><option value='4216'>SHKJAU ENISSA</option><option value='4217'>SPAMPANI RACHELE</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPECIALITA’&nbsp;<select id='Famiglia8' name='Famiglia8'><option value='0'>...</option><option value='4238'>CORPO LIBERO</option><option value='4239'>CERCHIO</option><option value='4240'>PALLA</option><option value='4241'>CLAVETTE</option><option value='4242'>NASTRO</option><option value='4243'>FUNE</option><option value='4244'>SUCCESSIONE</option><option value='4245'>COPPIA</option><option value='4246'>SQUADRA</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T-Z&nbsp;<select id='Famiglia9' name='Famiglia9'><option value='0'>...</option><option value='4219'>TERRIBILE</option><option value='4220'>TESTA</option><option value='4221'>TIBERI SOFIA</option><option value='4222'>TIOZZO SARA</option><option value='4223'>TIRRI MARTINA</option><option value='4224'>TORDINI</option><option value='4225'>TOTA REBECCA</option><option value='4226'>VALLIFUOCO</option><option value='4227'>VANOSI MARTINA</option><option value='4228'>VANOTTI VIOLA FIORENZA</option><option value='4229'>VANTAGGIATO GAIA</option><option value='4230'>VICERE ELISA</option><option value='4231'>VITI VIOLA</option><option value='4232'>VOLANTINI LISA</option><option value='4233'>VOLPE ELENA</option><option value='4234'>ZAGAMI LUCREZIA</option><option value='4235'>ZANELLA CAMILA</option><option value='4236'>ZECCA</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='button' onclick='javascript:Find(0);' value='Cerca'>
+      </p>
+      <div id="pager">
+      </div>
+      <div class="photogallery">
+        <ul id="result" class="photogallery">
+        </ul>
+      </div>
+      <div style="clear: both;">
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    &copy; 2015 ImagoMachine</div>
+</body>
+</html>
